@@ -1,0 +1,350 @@
+{% extends "crypto-layout.html" %} {% block title %} Portfolio {% endblock %} {%
+block main %}
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script
+    type="text/javascript"
+    src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+    async
+  >
+      {
+      "symbols": [
+        {
+          "proName": "BITSTAMP:BTCUSD",
+          "title": "BTC/USD"
+        },
+        {
+          "proName": "BITSTAMP:ETHUSD",
+          "title": "ETH/USD"
+        },
+        {
+          "description": "DOGE/USD",
+          "proName": "BITFINEX:DOGEUSD"
+        },
+        {
+          "description": "MATIC/USD",
+          "proName": "COINBASE:MATICUSD"
+        },
+        {
+          "description": "XRP/USD",
+          "proName": "BITFINEX:XRPUSD"
+        },
+        {
+          "description": "SHIBA/USD",
+          "proName": "FTX:SHIBUSD"
+        },
+        {
+          "description": "ADA/USD",
+          "proName": "KRAKEN:ADAUSD"
+        },
+        {
+          "description": "DOT/USD",
+          "proName": "HUOBI:DOTUSDT"
+        },
+        {
+          "description": "VET/USD",
+          "proName": "BITFINEX:VETUSD"
+        },
+        {
+          "description": "BNB/USD",
+          "proName": "BINANCE:BNBUSD"
+        },
+        {
+          "description": "ETC/USD",
+          "proName": "KRAKEN:ETCUSD"
+        }
+      ],
+      "showSymbolLogo": true,
+      "colorTheme": "light",
+      "isTransparent": false,
+      "displayMode": "adaptive",
+      "locale": "in"
+    }
+  </script>
+</div>
+<!-- TradingView Widget END -->
+<div class="container" style="padding-top: 20px">
+  <!---------------------CAROUSAL---------------------------------->
+  <div class="carousel" style="background-color: azure; margin-top: 20px">
+    <div id="cslide" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <ol class="carousel-indicators" style="bottom: -20px">
+          <li data-target="#cslide" data-slide-to="0" class="active"></li>
+          <li data-target="#cslide" data-slide-to="1"></li>
+          <li data-target="#cslide" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-item active text-center p-4">
+          <h5>
+            <a
+              target="_blank"
+              href="https://techcrunch.com/2021/05/12/vitalik-buterin-donates-1-billion-worth-of-meme-coins-to-india-covid-relief-fund/"
+              class="stretched-link"
+              style="color: black; text-decoration: none"
+            >
+              Ethereum creator donates meme coins worth $1 billion to help India
+              fight COVID-19
+            </a>
+          </h5>
+          <p>
+            Vitalik Buterin donated cryptocurrencies worth $1.5 billion to
+            several non-profit organizations, including $1 billion to a COVID-19
+            relief fund in India, on Wednesday in one of the largest-ever
+            individual philanthropy efforts.
+          </p>
+        </div>
+
+        <div class="carousel-item text-center p-4">
+          <h5>
+            <a
+              target="_blank"
+              href="https://www.financialexpress.com/market/this-2-day-old-crypto-is-already-worth-36-billion-among-top-10-coins-after-bitcoin-ethereum-others/2250973/"
+              class="stretched-link"
+              style="color: black; text-decoration: none"
+            >
+              This 2-day old crypto is already worth $36 billion; among top-10
+              coins after Bitcoin, Ethereum, others
+            </a>
+          </h5>
+          <p>
+            It traded as high as $731 with the $90 billion market cap to become
+            the fourth largest crypto, after Bitcoin, Ethereum, and Binance
+            Coin, right after its launch. ...
+          </p>
+        </div>
+
+        <div class="carousel-item text-center p-4">
+          <h5>
+            <a
+              target="_blank"
+              href="https://news.samsung.com/global/samsung-makes-it-easier-to-use-blockchain-on-galaxy-devices-with-support-for-hardware-wallets"
+              class="stretched-link"
+              style="color: black; text-decoration: none"
+            >
+              Samsung Makes It Easier to Use Blockchain on Galaxy Devices With
+              Support for Hardware Wallets
+            </a>
+          </h5>
+          <p>
+            Galaxy users can now import and manage all their assets for
+            cryptocurrencies and DApps in one, easy-to-use and secure location
+            ...
+          </p>
+        </div>
+      </div>
+      <a
+        target="_blank"
+        class="carousel-control-prev"
+        href="#cslide"
+        role="button"
+        data-slide="prev"
+        style="left: -65px"
+      >
+        <span class="fas fa-chevron-circle-left fa-x" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        target="_blank"
+        class="carousel-control-next"
+        href="#cslide"
+        role="button"
+        data-slide="next"
+        style="right: -70px"
+      >
+        <span
+          class="fas fa-chevron-circle-right fa-x"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!-----------------------CAROUSAL END---------------------------------->
+
+  <!-------------------------NEWS-------------------------------->
+  <p></p>
+  <h2
+    style="
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: OpenSans-SemiBold;
+    "
+  >
+    TOP STORIES
+  </h2>
+
+  <div class="media position-relative" style="margin-bottom: 20px">
+    <img
+      alt="TechCrunch"
+      src="https://techcrunch.com/wp-content/uploads/2013/10/techcrunch-logo1.png"
+      width="75"
+      height="50"
+      class="mr-3"
+    />
+    <div class="media-body">
+      <h5>
+        <a
+          target="_blank"
+          href="https://techcrunch.com/2021/05/13/brds-blockset-unveils-its-white-label-cryptocurrency-wallet-for-banks-and-other-enterprise-clients/"
+          class="stretched-link"
+          style="color: black; text-decoration: none"
+        >
+          BRD’s Blockset unveils its white-label cryptocurrency wallet for banks
+          and other enterprise clients
+        </a>
+      </h5>
+      <p>
+        Blockset, the blockchain infrastructure platform for enterprises by BRD
+        , announced early access to its wallet-as-a-service today. The
+        white-label solution gives clients, like financial institutions, the
+        ability to launch wallets that have the same features as BRD’s own
+        mobile cryptocurrency wallet, which now has about 7 million users with
+        over $20 billion assets under protection.
+      </p>
+    </div>
+  </div>
+  <div class="media position-relative" style="margin-bottom: 20px">
+    <img
+      alt="MoneyControl"
+      src="https://static.coindesk.com/wp-content/uploads/2020/09/coindesk-og-image-default-1200x600.png"
+      width="75"
+      height="50"
+      class="mr-3"
+    />
+    <div class="media-body">
+      <h5>
+        <a
+          target="_blank"
+          href="https://www.moneycontrol.com/news/business/cryptocurrency/tesla-stock-bitcoin-drop-as-musk-reverses-course-on-accepting-crypto-for-vehicles-over-climate-concerns-6886211.html"
+          class="stretched-link"
+          style="color: black; text-decoration: none"
+        >
+          Tesla stock & bitcoin drop as Musk reverses course on accepting crypto
+          for vehicles over climate concerns
+        </a>
+      </h5>
+      <p>
+        Musk said Tesla would not sell any bitcoin and intends to use bitcoin
+        for transactions as soon as mining transitions to more sustainable
+        energy.
+      </p>
+    </div>
+  </div>
+
+  <div class="media position-relative" style="margin-bottom: 20px">
+    <img
+      alt="EconomicTimes"
+      src="https://images.saymedia-content.com/.image/t_share/MTc0NDcxNDQ1OTYyMTA2NTAy/how-to-begin-investing-in-crypto.png"
+      width="75"
+      height="50"
+      class="mr-3"
+    />
+    <div class="media-body">
+      <h5>
+        <a
+          target="_blank"
+          href="https://economictimes.indiatimes.com/markets/forex/what-crypto-insiders-think-about-elon-musks-bitcoin-u-turn/articleshow/82603926.cms"
+          class="stretched-link"
+          style="color: black; text-decoration: none"
+        >
+          What crypto insiders think about Elon Musk’s bitcoin U-turn
+        </a>
+      </h5>
+      <p>
+        “The most logical answer is that he’s feeling pressure” from people who
+        think “that one can’t be green and own crypto,” said investor Michael
+        Terpin, calling that position “uninformed.”
+      </p>
+    </div>
+  </div>
+
+  <div class="media position-relative" style="margin-bottom: 20px">
+    <img
+      alt="EconomicTimes"
+      src="https://images-na.ssl-images-amazon.com/images/I/610xV0rT8kL._AC_UL600_SR600,600_.png"
+      width="75"
+      height="50"
+      class="mr-3"
+    />
+    <div class="media-body">
+      <h5>
+        <a
+          target="_blank"
+          href="https://economictimes.indiatimes.com/news/economy/policy/rbi-tells-lenders-to-re-consider-ties-with-crypto-exchanges-traders/articleshow/82602081.cms"
+          class="stretched-link"
+          style="color: black; text-decoration: none"
+        >
+          RBI tells lenders to re-consider ties with crypto exchanges, traders
+        </a>
+      </h5>
+      <p>
+        The guidance comes as India is crafting a law to ban cryptocurrencies
+        and penalize anyone dealing in them, which would be among the most
+        sweeping crackdowns on the new investing fad in the world.
+      </p>
+    </div>
+  </div>
+
+  <div class="media position-relative" style="margin-bottom: 20px">
+    <img
+      alt="LiveMint"
+      src="https://pbs.twimg.com/profile_images/1303221636745760768/jhoXTzaw.jpg"
+      width="75"
+      height="50"
+      class="mr-3"
+    />
+    <div class="media-body">
+      <h5>
+        <a
+          target="_blank"
+          href="https://www.livemint.com/companies/news/bitcoin-plunges-17-after-elon-musk-tweet-on-tesla-not-accepting-cryptocurrency-11620873189800.html"
+          class="stretched-link"
+          style="color: black; text-decoration: none"
+        >
+          Bitcoin plunges 17% after Elon Musk tweets on Tesla not accepting
+          cryptocurrency
+        </a>
+      </h5>
+      <p>
+        The price of the world's largest cryptocurrency dropped from around
+        $54,819 to $45,700, its lowest since March 1, in just under two hours
+        following the tweet...
+      </p>
+    </div>
+  </div>
+
+  <div class="media position-relative" style="margin-bottom: 20px">
+    <img
+      alt="LiveMint"
+      src="https://sc.cnbcfm.com/applications/cnbc.com/staticcontent/img/cnbc_logo.gif?v=1524171804"
+      width="75"
+      height="50"
+      class="mr-3"
+    />
+    <div class="media-body">
+      <h5>
+        <a
+          target="_blank"
+          href="https://www.cnbc.com/2021/05/13/bitcoin-btc-price-falls-after-tesla-stops-car-purchases-with-crypto.html"
+          class="stretched-link"
+          style="color: black; text-decoration: none"
+        >
+          As much as $365 billion wiped off cryptocurrency market after Tesla
+          stops car purchases with bitcoin
+        </a>
+      </h5>
+      <p>
+        Tesla CEO Elon Musk tweeted that the electric vehicle maker would
+        suspend car purchases using bitcoin, citing environmental concerns. As
+        much as $365.85 billion was wiped off the entire cryptocurrency market
+        though it did pare some losses. Bitcoin, ether and XRP were all sharply
+        lower. Musk said Tesla will not be selling any bitcoin and intends to
+        use it for transactions “as soon as mining transitions to more
+        sustainable energy.”
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}
