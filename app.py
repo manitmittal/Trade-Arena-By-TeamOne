@@ -12,14 +12,7 @@ from pyrebase import pyrebase
 
 
 config = {
-    "apiKey": "AIzaSyBKJgX-9lAI--sM9jV5dww9937yd_ZSLx0",
-    "authDomain": "tradearenahybrid.firebaseapp.com",
-    "databaseURL": "https://tradearenahybrid-default-rtdb.firebaseio.com",
-    "projectId": "tradearenahybrid",
-    "storageBucket": "tradearenahybrid.appspot.com",
-    "messagingSenderId": "780488640422",
-    "appId": "1:780488640422:web:1c3ebe34dc7944327bf167",
-    "measurementId": "G-RTW9Q8Q544"
+    #not to be included in the github repo
   }
 
 
